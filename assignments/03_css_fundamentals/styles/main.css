@@ -1,134 +1,100 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/************** now begins styling *************/
-/************** now begins styling *************/
-/************** now begins styling *************/
-
 body{
 background-color: #f0efef;
-font-family: Open sans, sans-serif;
+font:300 16px/1.4em Open Sans, sans-serif;
+color:#606161;
 }
+a{
+  text-decoration: none;
+}
+blockquote {
+  text-align:center;
+  font-style: italic;
+  padding-top:150px;
+}
+/*** why isn't this working??? ****/
 header{
-  background-image: url("../images/header_bg.jpg");
+  color:#033048;
+  padding:25px 0;
+}
+header nav{
+  float:right;
+}
+header nav ul li{
+  list-style: none;
+  display:inline-block;
+  font-size:24px;
+}
+header nav ul li a{
+  color:#f9e42e;
+}
+#homepage{
+  background: url("../images/header_bg.jpg") no-repeat top center #131e27;
   height:700px;
   color:white;
-  background-repeat:no-repeat;
 }
-ul{
-  list-style: disc;
-  margin:30px;
-}
-h3{
-  margin-left:20px;
-}
-#logo{
-  text-align:left;
-  padding-top:50px;
-  padding-left:50px;
+.logo{
   font-size:24px;
   font-weight:800;
-  }
-#subtitle {
+  display:inline-block;
+}
+.first{
+  /*logo at the top styling goes here*/
+}
+.tagline{
   text-align:center;
   padding-top:200px;
   font-size:24px;
   font-weight:600;
 }
-#button{
-  text-align:center;
-  margin:0 auto;
-  padding-top:30px;
-}
-#getnow{
-  background-color:#f9e42e;
-  text-align: center;
-  font-size:14px;
+.button{
   border-radius:5px;
   font-weight:800;
+  text-align:center;
   height:40px;
   width:280px;
-  border-color:none;
+  font-size:18px;
+  display:block;
+  margin:0 auto;
 }
-#benefits{
+.cta{
+  margin-top:30px;
+  padding-top:10px;
+  background-color:#f9e42e;
+  color:black;
+}
+.benefits{
   padding:20px;
   font-weight:600;
   font-size:20px;
   color:#033048;
 }
-#quote{
-  font-weight:300;
-  font-size:13px;
-  text-align:center;
-  font-style:italic;
-}
-
-#testimonial {
-  background-image: url("../images/testimonial_bg.jpg");
-  background-repeat:no-repeat;
+.testimonial{
+  background: url("../images/testimonial_bg.jpg") no-repeat top center #131e27;
   height:400px;
   color:white;
   font-size:24px;
 }
-#signup {
-  text-align:center;
-  padding:30px;
-  background-color: #f9e42e;
-}
-#sign_up_button {
+.blue{
+  padding-top:10px;
   background-color:#033048;
   color:white;
-  text-align: center;
-  font-size:14px;
-  border-radius:5px;
-  font-weight:800;
-  height:40px;
-  width:280px;
-  border-color:none;
+}
+.signup{
+  background:#f9e42e;
+  padding:40px;
+}
+footer{
+  background:black;
+  text-align:center;
+}
+footer a{
+  color:white;
+  padding-bottom:40px;
+}
+footer li{
+  list-style:none;
+  display:inline-block;
+}
+footer .logo{
+  color:#f9e42e;
 }

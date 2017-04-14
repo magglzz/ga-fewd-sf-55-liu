@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Relaxr</title>
     <meta description="Website for Relaxr">
-    <meta name="keywords" content="one, two, three">
-    <!-- External CSS files -->
-    <!-- BONUS: look into using normalize.css or reset.css -->
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
-
-    <header>
-      <h1 id="logo">Relaxr</h1>
-      <h2 id="subtitle">Get piece of mind with a single tap</h2>
-      <div id="button">
-        <button id="getnow"type="button">Get it Now</button>
-      </div>
+    <header id="homepage">
+      <h1 class="logo first">Relaxr</h1>
+      <p class="tagline">Get piece of mind with a single tap</p>
+      <a class="button cta" href="#">Get it Now</a>
     </header>
 
     <section>
-      <h2 id="benefits">Benefits</h2>
-      <h3>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</h3>
+      <h2 class="benefits">Benefits</h2>
+      <p>The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.</p>
       <ul>
         <li>Schedule meetings for you</li>
         <li>Excel automation to complete your work for you</li>
         <li>Responds to emails on your behalf</li>
         <li>Does all your work for you with our revolutionary AI technology</li>
+      </ul>
     </section>
 
-    <section id="testimonial">
+    <div class="testimonial">
       <blockquote>&ldquo;Relaxr changed my life. I&rsquo;ve been able to travel the world, spend limited time working and my boss keeps thanking me for crushing work.&rdquo;
       <p>- Amanda, Intuit</p></blockquote>
-    </section>
+    </div>
 
-    <section id="signup">
-      <button id="sign_up_button"type="button">Sign Up Now!</button>
-    </section>
+    <div class="signup">
+      <a class="button blue" href="#">Sign Up Now!</a>
+    </div>
 
     <footer>
-      <h1 id="logo">Relaxr</h1>
-      <a href="https://www.twitter.com">
-        <img src="images/twitter.png" alt="Twitter">
-      <a href="https://www.facebook.com">
-        <img src="images/facebook.png" alt="Facebook">
+      <p class="logo">Relaxr</p>
+      <ul class="social">
+        <li><a href="https://www.twitter.com">
+          <img src="images/twitter.png" alt="Twitter"></li>
+        <li><a href="https://www.facebook.com">
+          <img src="images/facebook.png" alt="Facebook"></li>
+      </ul>
       <p>Copyright 2015. Relaxr.</p>
     </footer>
   </body>
