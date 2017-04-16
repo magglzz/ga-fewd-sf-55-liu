@@ -11,20 +11,48 @@ blockquote {
   font-style: italic;
   padding-top:150px;
 }
-/*** why isn't this working??? ****/
+/*** why isn't this working??? EDIT: Wasn't working because had 
+/*something over riding it later, but made that element more 
+specific so that it wouldn't ****/
 header{
-  color:#033048;
+  background:#033048;
   padding:25px 0;
 }
-header nav{
-  float:right;
+h2{
+  font-size:40px;
+  font-weight:600;
+  line-height:1.2em;
+  color:#033048;
 }
-header nav ul li{
+article{
+  padding-left:30px;
+}
+hr{
+  width:700px;
+}
+p{
+  margin:0px 30px;
+}
+/* float takes an element out of it's normal flow of the page, 
+/*great for putting next to something*/
+.main-nav{
+  float:right;
+  padding-right:30px;
+  display:inline-block;
+  margin-top:0px;
+  padding-top:0px;
+}
+/*can't get the nav items to line up next to the relaxr logo*/
+.main-nav li{
   list-style: none;
   display:inline-block;
+  padding:10px 20px;
   font-size:24px;
+  font-weight:600;
+  color:#f9e42e;
 }
-header nav ul li a{
+/*can't just say .main-nav li {color:} have to be more specific bc picking up defaults from browser*/
+.main-nav li a{
   color:#f9e42e;
 }
 #homepage{
@@ -36,9 +64,8 @@ header nav ul li a{
   font-size:24px;
   font-weight:800;
   display:inline-block;
-}
-.first{
-  /*logo at the top styling goes here*/
+  padding-left:30px;
+  color:#fff; 
 }
 .tagline{
   text-align:center;
@@ -47,13 +74,13 @@ header nav ul li a{
   font-weight:600;
 }
 .button{
+  display:block;
   border-radius:5px;
-  font-weight:800;
   text-align:center;
   height:40px;
   width:280px;
+  font-weight:800;
   font-size:18px;
-  display:block;
   margin:0 auto;
 }
 .cta{
@@ -63,16 +90,46 @@ header nav ul li a{
   color:black;
 }
 .benefits{
-  padding:20px;
+  padding:20px 0px 0px 30px;
   font-weight:600;
   font-size:20px;
   color:#033048;
+}
+#benefits-text{
+  width:400px;
+}
+.bullets{
+  margin-left:60px;
+  width:390px;
 }
 .testimonial{
   background: url("../images/testimonial_bg.jpg") no-repeat top center #131e27;
   height:400px;
   color:white;
   font-size:24px;
+}
+.link{
+  font-size:20px;
+  font-weight:600;
+  padding:30px;
+  float:right;
+  color:#033048;
+}
+.l{
+  font-size:28px;
+  font-weight:800;
+}
+.sidebarheads{
+  font-weight:800;
+  font-size:20px;
+  color:#033048;
+}
+/*why won't this work??*/
+.nobullets{
+  list-style-type: none;
+}
+.social li a{
+  padding:10px;
 }
 .blue{
   padding-top:10px;
@@ -83,16 +140,23 @@ header nav ul li a{
   background:#f9e42e;
   padding:40px;
 }
+.abouttext{
+  font-weight:300;
+  font-size:20px;
+  color:#033048;
+}
 footer{
+  padding:40px;
   background:black;
   text-align:center;
+  color:white;
 }
 footer a{
   color:white;
   padding-bottom:40px;
 }
 footer li{
-  list-style:none;
+  padding:30px 0px;
   display:inline-block;
 }
 footer .logo{

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
-    <title>Relaxr</title>
+    <meta charset="utf-8">
+    <meta keywords="Relaxr, website, rowing, blog">
     <meta description="Blog page for Relaxr">
+    <title>Relaxr</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
@@ -11,9 +13,9 @@
 
   <body>
     <header>
-      <h1 class="logo"><a href="index.html">Relaxr</h1>
+      <h1><a class="logo" href="index.html">Relaxr</h1>
       <nav>
-        <ul>
+        <ul class="main-nav">
           <li><a href="">About</a></li>
           <li><a href="">FAQ</a></li>
           <li><a href="">Team</a></li>
@@ -25,42 +27,47 @@
     <article class="post">
       <h2>How I implemented Relaxr in 2 weeks and changed my life.</h2>
       <img src="images/blog_photo1.jpg" alt="rowing"> 
-      <p><span id="l">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
-      <p class="link"><a href="">Read more &gt;</a></p>
+      <p><span class="l">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+      <p><a class="link" href="">Read more &gt;</a></p>
     </article>
     <hr>
     <article class="post">
       <h2>I traveled across the world in 2 weeks thanks to Relaxr</h2>
       <img src="images/blog_photo2.jpg" alt="canoes">
-      <p><span id="l">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
-      <p class="link"><a href="">Read more &gt;</a></p>
+      <p><span class="l">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius augue nec metus viverra interdum. Sed in gravida lectus. Pellentesque habitant morbi tristique senectus et netu et malesuada fames ac turpis egestas. Mauris ut vulputate nisl.  Maecenas quis auctor dui. Ut porta aliquam lorem, at volutpat orci commodo a. Suspendisse nunc orci, porttitor ac sapien a, rutrum porttitor odio. Phasellus faucibus tristique orci eget dictum. Proin tincidunt vehicula leo sed mattis. Nunc faucibus augue a pellentesque tristique. Proin suscipit in dui ut convallis.</p>
+      <p><a class="link" href="">Read more &gt;</a></p>
     </article>
+    <!-- why is read more appearing under the hr line?-->
     <hr>
     <section>
-      <h3>Categories</h3>
+      <h3 class="sidebarheads">Categories</h3>
         <ul class="nobullets">
-           <li>Success stories</li>
-           <li>Stats</li>
-           <li>How tos</li>
-           <li>Best of</li>
-           <li>Business tips</li>
+           <li><a href="">Success stories</a></li>
+           <li><a href="">Stats</a></li>
+           <li><a href="">How tos</a></li>
+           <li><a href="">Best of</a></li>
+           <li><a href="">Business tips</a></li>
         </ul>
     </section>
     <section>
-      <h3>About Relaxr</h3>
-      <p>asdjf alskjdf;laksdjf ;</p>
-      <p class="link"><a href="">Learn More</a></p>
+      <h3 class="sidebarheads">About Relaxr</h3>
+      <p class="abouttext">asdjf alskjdf;laksdjf ;</p>
+      <p><a class="link" href="">Learn More</a></p>
+        <!-- why is learn more appearing next to the ad unit?-->
     </section>
-    <img src="../images/ad-unit.png">
-    <aside>
+    <div>
+    <img src="images/ad-unit.png">
+    </div>
+    <div class="signup">
       <a class="button blue" href="#">Sign Up Now!</a>
-    </aside>
+    </div>
+
     <footer>
       <p class="logo">Relaxr</p>
-      <ul class="nav">
-        <li><a href="https://www.twitter.com"></a>
+      <ul class="social">
+        <li><a href="https://www.twitter.com">
           <img src="images/twitter.png" alt="Twitter"></li>
-        <li><a href="https://www.facebook.com"></a>
+        <li><a href="https://www.facebook.com">
           <img src="images/facebook.png" alt="Facebook"></li>
       </ul>
       <p>Copyright 2015. Relaxr.</p>
