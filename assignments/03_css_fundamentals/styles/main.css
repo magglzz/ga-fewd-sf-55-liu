@@ -33,6 +33,10 @@ hr{
 p{
   margin:0px 30px;
 }
+aside{
+  float:right;
+  width:20%;
+}
 /* float takes an element out of it's normal flow of the page, 
 /*great for putting next to something*/
 .main-nav{
