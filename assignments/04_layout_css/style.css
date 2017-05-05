@@ -96,6 +96,8 @@ font-size:24px;
 .yellow{
   background-color:yellow;
 }
+/*buttons have borders already so you have to use border:none; and 
+/*then you can add whatever border you want*/
 .gray{
   background-color:gray;
 }
