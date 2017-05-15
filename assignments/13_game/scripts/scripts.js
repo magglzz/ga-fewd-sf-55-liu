@@ -9,20 +9,22 @@ $(document).ready(function (){
 //    function () {
 //     var userchoice = $(this).text()
 //      console.log(userchoice);
-
+var humanScore = 0
+var botScore = 0  
 $('#rock').on('click', function() {
     switch (botChoice) {
       case 'rock':
       $('#status').text('tie');
-      console.log('tie')
+      $('#humanScore').text(humanScore + 1);
+      $('#computerScore').text(botScore + 1);
       break;
     case 'scissors':
       $('#status').text('win');
-      console.log('win');
+      $('#humanScore').text(humanScore + 1);
       break;
     case 'paper':
       $('#status').text('lose');
-      console.log('lose');
+      $('#computerScore').text(botScore + 1);
       break;
     }
 })
@@ -31,15 +33,16 @@ $('#scissors').on('click', function() {
   switch (botChoice) {
     case 'rock':
       $('#status').text('lose');
-      console.log('lose')
+      $('#computerScore').text(botScore + 1);
       break;
     case 'scissors':
       $('#status').text('tie');
-      console.log('tie');
+      $('#humanScore').text(humanScore + 1);
+      $('#computerScore').text(botScore + 1);
       break;
     case 'paper':
       $('#status').text('win');
-      console.log('win');
+      $('#humanScore').text(humanScore + 1);
       break;
   }
 })
@@ -48,19 +51,20 @@ $('#paper').on('click', function() {
   switch (botChoice) {
     case 'rock':
       $('#status').text('win');
-      console.log('win')
+      $('#humanScore').text(humanScore + 1);
       break;
     case 'scissors':
       $('#status').text('lose');
-      console.log('lose');
+      $('#computerScore').text(botScore + 1);
       break;
     case 'paper':
       $('#status').text('tie');
-      console.log('tie');
+      $('#humanScore').text(humanScore + 1);
+      $('#computerScore').text(botScore + 1);
       break;
   }
 })
-    
+  
 var choices = ['rock', 'paper', 'scissors'];
 var botChoice = choices[Math.floor(Math.random() * choices.length)];
 //bot chooses lose (paper or scissors)
