@@ -1,0 +1,163 @@
+*{
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin:0px;
+}
+body {
+  font-family:rubik, helvetica neue, sans-serif;
+  font-weight:300;
+  font-size:1em;
+  text-align:center;
+  line-height: 1.5em;
+}
+/********************************/
+/****** top nav styling *********/
+/********************************/
+nav {
+  padding:30px;
+  overflow:auto;
+}
+nav img {
+  float:left;
+}
+button {
+  font: 500 14px rubik; 
+  padding:10px 20px;
+}
+section img {
+  width:30%;
+}
+.navigation{
+  list-style-type:none;
+  display:inline-block;
+  float:right;
+}
+.navigation li {
+  display:inline-block;
+}
+.navigation li a {
+  text-decoration:none;
+  padding:0px 30px;
+}
+/********************************/
+/****** homepage header styling *********/
+/********************************/
+#site-title {
+  padding-top:120px;
+  font-size:5em;
+  font-weight:500;
+  line-height: 2em;
+}
+#site-description{
+  padding:10px;
+  font-size:1.5em;
+  font-weight:300;
+}
+#scroll-indicator {
+  padding:200px 0px;
+  font-size:.8em;
+  font-weight:600;
+}
+/********************************/
+/****** homepage projects *********/
+/********************************/
+
+.2-colum {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+/*why isn't this working?*/
+
+.section-content {
+  width:35%;
+  padding:40px;
+  text-align:left;
+}
+.section-content p{
+  padding-top:30px;
+  float:left;
+  display:inline-block;
+  background-color:orange;
+}
+h2 {
+  text-decoration:underline;
+  font-weight:500;
+  font-size:.8em;
+  padding-bottom: 30px;
+}
+h1 {
+  font-size:1.7em;
+  font-weight:500;
+  line-height:1.5em;
+}
+hr {
+  color:black;
+  background-color:black;
+  margin-top:100px;
+  height: 5px;
+}
+.break-text {
+  text-align:left;
+  font: italic 2em/1em rubik;
+}
+/********************************/
+/****** referral cards *********/
+/********************************/
+.white-float {
+  width:28%;
+  box-shadow:0px 10px 30px rgba(0,0,0,0.20);
+  padding:30px;
+  margin:300px 100px;
+}
+.homepage-buttons {
+  margin-top:40px;
+}
+.referral-by {
+  font-size:.8em;
+  text-transform:uppercase;
+  font-weight:400;
+  padding-top:20px;
+}
+#company {
+  padding-top:0px;
+  font-size:.7em;
+}
+/********************************/
+/****** say hello *********/
+/********************************/
+#sayhello {
+  background-color:gray;
+}
+.contact-item {
+  display:flex;
+  flex-wrap:wrap;
+  height:200px;
+  width: 200px;
+  font-size:1rem;
+  vertical-align:top;
+  color:#fff;
+  border:1px solid white;
+
+}
+#bordered-box {
+  position:absolute;
+  top:10px;
+  left:10px;
+  border:1px solid white;
+}
+.contact-contents{
+
+}
+#sayhello-content {
+  color: white;
+}
+
+
+
+
+
+
+
+

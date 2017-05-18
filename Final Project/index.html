@@ -7,19 +7,109 @@
     <meta name="keywords" content="SF Designer, designer, product designer, ui designer, ux designer, design, digital">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,500" rel="stylesheet">
   </head>
+
   <body>
     <header>
-      <div>logo goes here</div>
-      <ul>
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-      <p>Margaret Liu</p>
-      
+      <nav>
+        <img src="images/logo.png" alt="Margaret Liu" id="logo">
+        <ul class="navigation">
+          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p id="site-title">Margaret Liu</p>
+      <p id="site-description">description text goes here</p>
+<!-- how do you create a scroll arrow in css? -->
+      <div id="scroll-indicator">
+        <p>SEE MY WORK</p>
+        <span id="scroll-arrow">arrow goes here<span>
+      </div>
     </header>
 
-  
+    <section class="2-colum" class="clearfix">
+      <div class="section-content">
+        <h2>01 B2B PORTAL</h2>
+        <h1>Caring.com Partner Portal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+        <button class="homepage-buttons" href="portal.html">View project</button>
+      </div>
+      <img src="images/placeholder.jpg">
+    </section>
+
+    <div class="white-float">
+      <p class="referral-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <p class="referral-by">Bianca Monica</p>
+      <p class="referral-by" id="company">Warner Brothers</p>
+    </div>
+
+    <hr>
+    
+    <div class="break-text">The goal was to adlskfj alsjdf lkasjdf ads jasd Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+   
+    <section class="2-colum">
+      <div class="section-content">
+        <h2>02 INTERNAL SALES TOOL</h2>
+        <h1>Caring.com Talk</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+        <button class="homepage-buttons" href="talk.html">View project</button>
+      </div>
+      <img src="images/placeholder.jpg">
+    </section>
+
+    <div class="white-float">
+      <p class="referral-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
+      <p class="referral-by">Bianca Monica</p>
+      <p class="referral-by">Warner Brothers</p>
+    </div>
+
+    <section class="2-colum">
+      <div class="section-content">
+        <h2>03 WEBSITE</h2>
+        <h1>Caring.com Provider Pages</h1>
+        <p>text about the project Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  </p>
+        <button class="homepage-buttons" href="talk.html">View project</button>
+      </div>
+      <img src="images/placeholder.jpg">
+    </section>
+<!-- **************************************************************** -->    
+<!--how do you create two overlapping bordered boxes? -->
+<!-- **************************************************************** -->  
+    <section class="2-colum" id="sayhello"> 
+      <div class="contact-contents">
+        <div class="contact-item">
+          <a href="https://www.linkedin.com" class="borderedbox-title">
+              <h4>Online Resume</h4>
+              <h5>LinkedIn</h5>
+          </a>
+          <div class="borderedbox"></div>
+        </div>
+        <div class="contact-item">
+          <div class="borderedbox"></div>
+          <a href="contact.html">
+            <h4>Send a Message</h4>
+            <h5>Email</h5>
+          </a>
+        </div>
+        <div class="contact-item">
+          <div class="borderedbox"></div>
+          <a href="https://behance.net">
+            <h4>Check Out My Art</h4>
+            <h5>Behance</h5>
+          </a>
+        </div>
+      </div>
+      <div class="section-content" id="sayhello-content">
+        <h2>04 CONTACT</h2>
+        <h1>Say Hello</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="homepage-buttons" href="">Send a message</button>
+      </div>
+    </section>
+
+  <footer> Created by Margaret Liu 2017
+  </footer>
   </body>
 </html>

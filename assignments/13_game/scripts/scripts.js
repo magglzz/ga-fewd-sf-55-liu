@@ -15,16 +15,16 @@ $('#rock').on('click', function() {
     switch (botChoice) {
       case 'rock':
       $('#status').text('tie');
-      $('#humanScore').text(humanScore + 1);
-      $('#computerScore').text(botScore + 1);
+      $('#humanScore').text(humanScore++);
+      $('#computerScore').text(botScore++);
       break;
     case 'scissors':
       $('#status').text('win');
-      $('#humanScore').text(humanScore + 1);
+      $('#humanScore').text(humanScore++);
       break;
     case 'paper':
       $('#status').text('lose');
-      $('#computerScore').text(botScore + 1);
+      $('#computerScore').text(botScore++);
       break;
     }
 })
@@ -33,16 +33,16 @@ $('#scissors').on('click', function() {
   switch (botChoice) {
     case 'rock':
       $('#status').text('lose');
-      $('#computerScore').text(botScore + 1);
+      $('#computerScore').text(botScore++);
       break;
     case 'scissors':
       $('#status').text('tie');
-      $('#humanScore').text(humanScore + 1);
-      $('#computerScore').text(botScore + 1);
+      $('#humanScore').text(humanScore++);
+      $('#computerScore').text(botScore++);
       break;
     case 'paper':
       $('#status').text('win');
-      $('#humanScore').text(humanScore + 1);
+      $('#humanScore').text(humanScore++);
       break;
   }
 })
@@ -51,16 +51,16 @@ $('#paper').on('click', function() {
   switch (botChoice) {
     case 'rock':
       $('#status').text('win');
-      $('#humanScore').text(humanScore + 1);
+      $('#humanScore').text(humanScore++);
       break;
     case 'scissors':
       $('#status').text('lose');
-      $('#computerScore').text(botScore + 1);
+      $('#computerScore').text(botScore++);
       break;
     case 'paper':
       $('#status').text('tie');
-      $('#humanScore').text(humanScore + 1);
-      $('#computerScore').text(botScore + 1);
+      $('#humanScore').text(humanScore++);
+      $('#computerScore').text(botScore++);
       break;
   }
 })
@@ -87,3 +87,5 @@ var botChoice = choices[Math.floor(Math.random() * choices.length)];
 
 
 })
+
+
