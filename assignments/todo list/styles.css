@@ -1,0 +1,12 @@
+label {
+  cursor:pointer;
+}
+:checked + span {
+  text-decoration: line-through;
+};
+fieldset{
+  border: none;
+}
+#template {
+  display:none;
+}

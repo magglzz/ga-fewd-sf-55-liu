@@ -63,8 +63,8 @@ section img {
 /****** homepage projects *********/
 /********************************/
 
-.2-colum {
-  display:flex;
+.two-column {
+  display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
 }

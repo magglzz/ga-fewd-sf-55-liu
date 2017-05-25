@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <meta name="description" content="Site description goes here">
+    <meta name="keywords" content="keywords, go, here">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1>To Do</h1>
+    <form>
+      <fieldset>
+        <legend>Add To Do</legend>
+        <div>
+          <input type="text" id="task" placeholder="Enter Task" autofocus>
+          <button id="addbutton">Add</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>List:</legend>
+        <ol id="todo-list">
+          <!--wrap input in a label so that you connect the text of the check box with the check box
+          so that when you hover over label and click label you will also click checkbox
+        -->
+          <li id="template"><label><input type="checkbox"><span>Item 1</span></label></li>
+        </ol>
+      </fieldset>
+      <button id="clearbutton">Clear completed</button>
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+
+</html>

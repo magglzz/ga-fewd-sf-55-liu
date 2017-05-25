@@ -5,11 +5,14 @@
     <title>Forms</title>
     <meta name="description" content="Site description goes here">
     <meta name="keywords" content="keywords, go, here">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
     <form>
       <h1>Course Application</h1>
+
       <fieldset>
         <legend>Your Contact Info</legend>
         <div>
@@ -17,7 +20,56 @@
           <input name="name" placeholder="First">
           <input name="name" placeholder="Last">
         </div>
+        <div>
+          <label for="phone">Phone Number </label>
+          <input name="phone1">
+          <input name="phone2">
+          <input name="phone3">
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input name="streetaddress1" placeholder="Street Address">
+          <input name="streetaddress2" placeholder="Address Line 2">
+          <input name="city" placeholder="City">
+          <input name="state" placeholder="State">
+          <input name="postalcode" placeholder="Postal Code">
+        </div>
       </fieldset>
+
+      <fieldset>
+        <legend>Skills and Interests</legend>
+        <div class="dropdown-menu">
+          <button type="button">Select One</button>
+          <div>
+            <label for="course">Course</label>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
+        <div>
+          <label for="pastexperience">Past Experience</label>
+          <textarea rows="4" cols="80"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Anything else?</legend>
+        <div>
+          <label for="referral">Referral</label>
+          <button type="button">None</button>
+          <div>
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+        </div>
+        <div>
+          <label for="comments">Comments</label>
+          <textarea rows="4" cols="80"></textarea>
+        </div>
+      </fieldset>
+
+      <button type="button">Save Draft</button>
+      <button type="submit">Submit</button>
     </form>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
     </script>
